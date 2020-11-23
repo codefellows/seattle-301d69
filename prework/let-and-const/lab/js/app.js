@@ -37,7 +37,7 @@ function displayPics(){
   }
   console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `let`.
-  // because it was invoked out of the scope.
+  // Because it was invoked out of the scope .
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
