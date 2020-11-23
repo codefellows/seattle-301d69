@@ -188,7 +188,9 @@ Student.prototype.scope = function() {
 // TODO: Uncomment the following line of code to see the output in the browser console
  console.log(joe.scope());
 
-Student.prototype.scopeArrow = () => console.log(this);
+Student.prototype.scopeArrow = function (){
+  console.log(this);
+};  
 
 // TODO: Uncomment the following line of code to see the output in the browser console
  console.log(joe.scopeArrow());
