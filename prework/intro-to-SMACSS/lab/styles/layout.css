@@ -1,12 +1,7 @@
 #logo {
-  float: left;
   padding-bottom: 25px;
   color: black;
   text-decoration: none;
-}
-
-#logo img {
-  float: left;
 }
 
 #logo h1 {
@@ -22,4 +17,22 @@
   font-family: "Abel", sans-serif;
   font-size: 0.65em;
   text-transform: uppercase;
+}
+
+.layout-split-left {
+  float: left;
+}
+
+.layout-split-right {
+  float: right;
+}
+
+.layout-split-right > li {
+  float: left;
+  padding-right: 2px;
+}
+
+.recipe li {
+  float: left;
+  width: 40%;
 }

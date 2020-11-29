@@ -20,15 +20,6 @@ nav {
   margin-top: 25px;
 }
 
-nav ul {
-  float: right;
-}
-
-nav li {
-  float: left;
-  padding-right: 2px;
-}
-
 hr {
   clear: both;
   border: 0;
@@ -97,4 +88,9 @@ footer section p {
 
 input {
   font-family: "Patrick Hand", cursive;
+}
+
+section hr {
+  border-bottom: 1px solid #eee;
+  height: 0;
 }
