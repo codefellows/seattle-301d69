@@ -184,17 +184,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+//    undefined
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//    undefined
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//    Arrow functions do not reset the 'this' context, it remains the the same as it would be for the enclosing scope or the window object if there is no 'non-arrow' enclosing scope. Which is why we should not use them in constructor functions.
