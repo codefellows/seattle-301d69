@@ -1,0 +1,47 @@
+/* The way we lay things out on a page
+  - width, height, float, flexbox, css grid, margins, positioning
+*/
+
+header {
+  height: 100px;
+  width: 100%;
+}
+input {
+  float: right;
+}
+
+nav {
+   float: right;
+   width: 50%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+div {
+  width: 33%;
+  height: 80px;
+}
+
+footer{
+  height: 100px;
+}
+
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width: 780px){
+  main {
+    background-color: pink;
+    width: 780px;
+    margin: auto;
+  }
+
+  div {
+     width: 50%;
+  }
+}

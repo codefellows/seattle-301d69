@@ -1,0 +1,29 @@
+/* Everything specific about a single thing on the page
+  - footer
+  - nav
+  - hamburger menu
+  - color, borders, padding, orientation
+*/
+
+header {
+  background-color: #301d6930;
+}
+
+nav {
+   visibility: hidden;
+    background-color: #301d6930;
+    border: solid #301d6980 3px;
+
+}
+
+input:checked + nav{
+  visibility: visible;
+}
+
+footer {
+  background-color: #301d6930;
+}
+
+div {
+  background-color: #99000030;
+}
