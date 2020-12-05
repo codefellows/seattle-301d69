@@ -1,13 +1,17 @@
 'use strict';
 
+
 /// STEP 1
 /// This is a standard function expression. You may also be familiar with function declarations, which begin with the "function" keyword.
+
 const theOldWay = function(course) {
   return `I am currently enrolled in ${course}`;
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
+
  console.log('The old way:', theOldWay('Code 301'));
+
 
 
 // STEP 2
@@ -27,7 +31,10 @@ const withoutParens = course => {
   return `I am currently enrolled in ${course}`;
 };
 
+
 /// TODO: Uncomment the following line of code to see the output in the browser console
+
+
  console.log('Without parens:', withoutParens('Code 301'));
 
 
@@ -108,14 +115,18 @@ const newObject = array => ({
 
 
 
+
 let sum = (a, b, c, d) =>  a + b + c + d;
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
  console.log(sum(1, 2, 3, 4));
 
 
+
 let objectLit = () => ({
  
+
     key1: 'value1',
     key2: 'value2',
     key3: 'value3',
@@ -139,6 +150,7 @@ let sumAndProduct = (a, b) => {
 let message = name =>  `Hello, ${name}!`;
 
 
+
 // TODO: Uncomment the following line of code to see the output in the browser console
  console.log(message('Allie'));
 
@@ -153,15 +165,19 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
+
  console.log(joe);
 
+
 // TODO: After viewing the previous console.log(), return the code to a working state.
+
 
 
 
 Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
@@ -171,7 +187,9 @@ Student.prototype.greeting = function() {
 
 
 
+
 Student.courseName = () => 'This student is enrolled in Code 301.';
+
 
 
 // TODO: Uncomment the following line of code to see the output in the browser console
@@ -188,13 +206,16 @@ Student.prototype.scope = function() {
 // TODO: Uncomment the following line of code to see the output in the browser console
  console.log(joe.scope());
 
+
 Student.prototype.scopeArrow = () => console.log(this);
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
  console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
+
  // the instance of the object
 //
 // 2. What is "this" when joe.scopeArrow() is invoked?
@@ -202,4 +223,5 @@ Student.prototype.scopeArrow = () => console.log(this);
 //
 // 3. Explain why "this" is different when an arrow function is used.
 // its different because its trying to acceses an object
+
 //
