@@ -1,0 +1,15 @@
+img {
+  max-width: 60%;
+  max-height: 400px;
+  margin: auto;
+  display: block;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+template {
+   display: none;
+}
