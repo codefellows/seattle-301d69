@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Forms Demo
+  </title>
+</head>
+<body>
+  <h1>Forms</h1>
+
+  <form action="/save-voice-message" method="POST">
+    <!-- the action of a form is the destination on the server (route) we want the request to go to -->
+    <fieldset>
+      <h2>saveVoiceMessage</h2>
+      <label for="from">From</label><input type="text" name="from">
+      <label for="to">To</label><input type="text" name="to">
+      <label for="phone">phone number</label><input type="tel" name="phone" pattern="\d{3}-\d{3}-\d{4}">
+      <label for="message">message</label><input type="text" name="message">
+      <input type="submit" value="send message">
+    </fieldset>
+  </form>
+
+  <form action="/contact-me">
+    <!-- the action of a form is the destination on the server (route) we want the request to go to -->
+    <fieldset>
+      <h2>Contact Form</h2>
+      <label for="from">From</label><input type="text" name="from">
+      <label for="to">To</label><input type="text" name="to">
+      <label for="phone">phone number</label><input type="tel" name="phone" pattern="\d{3}-\d{3}-\d{4}">
+      <label for="message">message</label><input type="text" name="message">
+      <input type="submit" value="send message">
+    </fieldset>
+  </form>
+</body>
+</html>

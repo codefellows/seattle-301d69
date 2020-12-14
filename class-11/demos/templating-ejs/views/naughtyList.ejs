@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santas List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Naughty or Nice List</h1>
+  <!-- list === [{name: 'nick a'}] -->
+  <!-- list[0].name -->
+  
+  <ul>
+    <% for(let i = 0; i < list.length; i++){ %>
+      <li>
+        <h2><%= list[i].name %></h2>
+        <p><%= list[i].naughtyOrNice %></p>
+        <p><%= list[i].present %></p>
+      </li>
+    <% } %>
+
+  </ul>
+</body>
+</html>
