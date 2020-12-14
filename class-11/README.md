@@ -1,5 +1,14 @@
 # Server-side templating with EJS
 
+## Feedback week 2
+
+- 301 is harder than 102 and 201
+- Learning styles differ
+- There are a lot of console logs in the city explorer front end, was that meant to simulate working with another team?
+- Tas are doing great and are helpful
+- Time management
+- Doubt in my mind
+
 ## Overview
 
 Today is the first day of our new project, a mobile-only book collection. You will be working with the same partner(s) each day, gradually working towards a full-scale application, complete with server-side templating, persistence in a SQL database, and the ability to search the Google Books API for new books to add to your collection.
