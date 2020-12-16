@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= todo.title %></h1>
+  <p><%= todo.due_date %></p>
+  <p><%= todo.description %></p>
+
+  <input type="checkbox">
+  <form action="/update-todo?_method=PUT" method="POST">
+    <fieldset>
+      Title <input type="text" name="title" value="<%= todo.title %>">
+      Due Date <input type="text" name="due_date" value="<%= todo.due_date %>">
+      Description <input type="text" name="description" value="<%= todo.description %>">
+      <input type="text" name="id" value="<%= todo.id %>">
+      <input type="submit" value="update task">
+
+    </fieldset>
+  </form>
+</body>
+</html>

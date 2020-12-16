@@ -1,0 +1,6 @@
+form {
+  display: none;
+}
+input:checked + form {
+  display: block;
+}
